@@ -1,0 +1,33 @@
+<script>
+    // Choose the day
+    let day = parseInt(prompt("Day of the week?"));
+
+    if (day >= 1 && day <= 7) {
+        if (day === 1 || day === 7) {
+            console.log("It's a calendar that will start with Mo or Su.");
+            document.write("It's a calendar that will start with Mo or Su.");
+        } else {
+            console.log("It's not a calendar that will start with Mo or Su.");
+            document.write("It's not a calendar that will start with Mo or Su.");
+        }
+
+        switch(day) {
+            case 1: document.write("Mo"); break;
+            case 2: document.write("Tu"); break;
+            case 3: document.write("Wd"); break;
+            case 4: document.write("Th"); break;
+            case 5:
+                let times = 3;
+                while (times > 0) {
+                    document.write("Yeeeey!!!  :)")
+                    times--;
+                }
+                document.write("Fr"); break;
+            case 6: document.write("Sa"); break;
+            case 7: document.write("Su"); break;
+        }
+    } else {
+        console.log("Invalid input for day of the week.");
+        document.write("Invalid input for day of the week.");
+    }
+</script>
